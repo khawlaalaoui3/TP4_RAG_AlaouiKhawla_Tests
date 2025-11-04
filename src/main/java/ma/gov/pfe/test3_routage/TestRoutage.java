@@ -15,14 +15,11 @@ import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
 import dev.langchain4j.rag.query.router.LanguageModelQueryRouter;
 import dev.langchain4j.rag.query.router.QueryRouter;
 import dev.langchain4j.rag.DefaultRetrievalAugmentor;
-
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.googleai.GoogleAiGeminiChatModel;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.service.AiServices;
-
 import ma.gov.pfe.assistant.Assistant;
-
 import java.net.URL;
 import java.nio.file.Path;
 import java.util.*;
@@ -47,7 +44,7 @@ public class TestRoutage {
 
         //  Charger deux documents
         EmbeddingStore<TextSegment> storeIA = loadDocument("/rag.pdf");
-        EmbeddingStore<TextSegment> storeAutre = loadDocument("/langchain4jj.pdf"); // mets un vrai fichier ex : random.pdf
+        EmbeddingStore<TextSegment> storeAutre = loadDocument("/langchain4jj.pdf");
 
         //  Modèle embeddings
         EmbeddingModel embeddingModel = new AllMiniLmL6V2EmbeddingModel();

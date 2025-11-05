@@ -44,7 +44,6 @@ public class TestSansRag {
 
         EmbeddingModel embeddingModel = new AllMiniLmL6V2EmbeddingModel();
 
-        // Charger le PDF RAG uniquement (assure-toi que /rag.pdf est dans src/main/resources)
         EmbeddingStore<TextSegment> store = loadPdf("/rag.pdf", embeddingModel);
 
         ContentRetriever retriever = EmbeddingStoreContentRetriever.builder()

@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>langchain</w>
+      <w>tavily</w>
     </words>
   </dictionary>
 </component>
